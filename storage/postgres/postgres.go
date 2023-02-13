@@ -7,7 +7,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/RangelReale/osin"
+	"github.com/hellofresh/osin"
 	wErrors "github.com/pkg/errors"
 )
 
@@ -41,7 +41,7 @@ var schemas = []string{`CREATE TABLE IF NOT EXISTS client (
 	access        text NOT NULL
 )`}
 
-// Storage implements interface "github.com/RangelReale/osin".Storage and interface "github.com/ory/osin-storage".Storage
+// Storage implements interface "github.com/hellofresh/osin".Storage and interface "github.com/ory/osin-storage".Storage
 type Storage struct {
 	db *sql.DB
 }
